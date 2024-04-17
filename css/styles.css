@@ -17,6 +17,22 @@ body {
   background: #ffffff;
   color: #434455;
 }
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
 /* ================HEADER STYLES================ */
 .page-logo {
   font-family: 'Raleway', sans-serif;
@@ -63,6 +79,7 @@ address {
 .hero-section {
   background: #2e2f42;
   text-align: center;
+  padding: 188px 472px;
 }
 
 .main-page-title {
@@ -82,6 +99,9 @@ address {
   color: #fff;
   background: #4d5ae5;
   border: none;
+  border-radius: 4px;
+  padding: 16px 32px;
+  margin-top: 48px;
 }
 
 .hero-button:hover,
@@ -106,6 +126,7 @@ address {
 /* ===============OUR TEAM=============== */
 .our-team-section {
   background: #f4f4fd;
+  padding: 120px 156px;
 }
 
 .our-team-title {
@@ -116,11 +137,17 @@ address {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .team-member {
   background: #fff;
   text-align: center;
+  border-radius: 0 0 4px 4px;
+  padding: 0px 0px 32px 0px;
+  width: 264px;
+  height: 380px;
+  display: inline-block;
 }
 
 .team-member-name {
@@ -130,6 +157,8 @@ address {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-top: 32px;
+  margin-bottom: 8px;
 }
 
 .team-member-role {
@@ -138,6 +167,10 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
+}
+
+.name-role-section {
+  margin: 32px 16px;
 }
 
 /* ================PORTFOLIO================ */
@@ -149,10 +182,14 @@ address {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .portfolio-item {
   background: #fff;
+  border: 1px solid #e7e9fc;
+  width: 360px;
+  height: 420px;
 }
 
 .portfolio-item-title {
@@ -172,6 +209,15 @@ address {
 /* ================FOOTER STYLES=============== */
 .footer-section {
   background: #2e2f42;
+  width: 1440px;
+  height: 312px;
+  margin-top: 120px;
+  padding: 100px 120px 156px;
+}
+
+.footer-logo-descr {
+  width: 264px;
+  height: 112px;
 }
 
 .footer-logo-color {
@@ -184,4 +230,5 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  margin-top: 16px;
 }
