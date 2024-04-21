@@ -2,6 +2,9 @@
 ul,
 ol {
   list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 a {
@@ -26,14 +29,38 @@ p {
   margin-bottom: 0;
 }
 
-ul,
-ol {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
+img {
+  display: block;
+  max-width: 100%;
+}
+/* ================HEADER STYLES================ */
+.page-container {
+  min-height: 100vh;
 }
 
-/* ================HEADER STYLES================ */
+.page-nav {
+  display: flex;
+  align-items: baseline;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.container {
+  max-width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
 .page-logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -42,17 +69,26 @@ ol {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 
 .logo-color {
   color: #2e2f42;
 }
+
+.menu {
+  display: flex;
+  column-gap: 40px;
+}
 .menu-link {
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .menu-link:hover,
 .menu-link:active,
@@ -71,14 +107,22 @@ address {
   font-style: normal;
 }
 
+.address-list {
+  display: flex;
+  column-gap: 40px;
+}
+
 .address-link:hover,
 .address-link:focus {
   color: #404bbf;
 }
-/* ================MAIN STYLES================ */
+/* =====================HERO===================== */
 .hero-section {
   background: #2e2f42;
   text-align: center;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 188px 472px;
 }
 
@@ -89,6 +133,7 @@ address {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  margin-bottom: 48px;
 }
 
 .hero-button {
@@ -101,7 +146,8 @@ address {
   border: none;
   border-radius: 4px;
   padding: 16px 32px;
-  margin-top: 48px;
+  min-width: 169px;
+  height: 56px;
 }
 
 .hero-button:hover,
@@ -115,6 +161,7 @@ address {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .benefits-item-descr {
@@ -123,10 +170,23 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
+.benefits-item {
+  width: 264px;
+  height: 104px;
+}
+
+.benefits-list {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 24px;
+}
 /* ===============OUR TEAM=============== */
 .our-team-section {
   background: #f4f4fd;
-  padding: 120px 156px;
+  padding: 120px 0;
 }
 
 .our-team-title {
@@ -139,6 +199,11 @@ address {
   text-transform: capitalize;
   margin-bottom: 72px;
 }
+.team-member-section {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
 
 .team-member {
   background: #fff;
@@ -147,7 +212,6 @@ address {
   padding: 0px 0px 32px 0px;
   width: 264px;
   height: 380px;
-  display: inline-block;
 }
 
 .team-member-name {
@@ -174,6 +238,9 @@ address {
 }
 
 /* ================PORTFOLIO================ */
+.portfolio {
+  padding: 120px 0;
+}
 .portfolio-title {
   font-weight: 700;
   font-size: 36px;
@@ -183,6 +250,11 @@ address {
   color: #2e2f42;
   text-transform: capitalize;
   margin-bottom: 72px;
+}
+
+.portfolio-list {
+  display: flex;
+  gap: 24px 48px;
 }
 
 .portfolio-item {
@@ -211,12 +283,11 @@ address {
   background: #2e2f42;
   width: 1440px;
   height: 312px;
-  margin-top: 120px;
-  padding: 100px 120px 156px;
+  padding: 100px 0;
 }
 
 .footer-logo-descr {
-  width: 264px;
+  width: 296px;
   height: 112px;
 }
 
