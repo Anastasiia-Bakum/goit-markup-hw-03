@@ -41,7 +41,7 @@ img {
 
 .page-nav {
   display: flex;
-  align-items: baseline;
+  align-items: center;
 }
 
 main {
@@ -80,7 +80,7 @@ main {
 
 .menu {
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
 }
 .menu-link {
   display: block;
@@ -134,7 +134,7 @@ address {
   text-align: center;
   color: #fff;
   margin-bottom: 48px;
-  width: 496px;
+  max-width: 496px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -145,12 +145,15 @@ address {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
-  background: #4d5ae5;
+  background-color: #4d5ae5;
   border: none;
   border-radius: 4px;
   padding: 16px 32px;
   min-width: 169px;
   height: 56px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-button:hover,
@@ -233,7 +236,6 @@ address {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  margin-top: 32px;
   margin-bottom: 8px;
 }
 
@@ -246,7 +248,7 @@ address {
 }
 
 .name-role-section {
-  margin: 32px 16px;
+  padding: 32px 0;
 }
 
 /* ================PORTFOLIO================ */
@@ -281,6 +283,7 @@ address {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .portf-text-box {
   border-bottom: 1px solid #e7e9fc;
@@ -304,6 +307,19 @@ address {
   padding: 100px 0;
 }
 
+.footer-page-logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  margin-right: 76px;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
 .footer-logo-descr {
   width: 296px;
   height: 112px;
@@ -319,5 +335,5 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  margin-top: 16px;
+  max-width: 264px;
 }
