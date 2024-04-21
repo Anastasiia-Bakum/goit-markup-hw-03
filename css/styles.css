@@ -38,7 +38,9 @@ img {
   padding-bottom: 120px;
 }
 /* ================HEADER STYLES================ */
-
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
 .page-nav {
   display: flex;
   align-items: center;
@@ -60,7 +62,6 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  border-bottom: 1px solid #e7e9fc;
 }
 
 .page-logo {
@@ -111,7 +112,7 @@ address {
 
 .address-list {
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
 }
 
 .address-link:hover,
@@ -318,11 +319,6 @@ address {
   margin-right: 76px;
   display: inline-block;
   margin-bottom: 16px;
-}
-
-.footer-logo-descr {
-  width: 296px;
-  height: 112px;
 }
 
 .footer-logo-color {
